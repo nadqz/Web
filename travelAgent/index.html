@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <h1>Form Pemesanan Tiket Travel</h1>
+    <form id="travelForm">
+        <label for="nama">Name:</label>
+        <input type="text" id="nama" name="nama" required><br><br>
+
+        <label for="kotaAsal">From:</label>
+        <select id="kotaAsal" name="kotaAsal">
+            <option value="Jakarta">Jakarta Kota</option>
+            <option value="Jakarta">Jakarta, Tanah Abang</option>
+            <option value="Jakarta">Jakarta, Pasar Senen</option>
+            <option value="Jakarta">Jakarta, Cikini</option>
+            <option value="Bogor">Bogor</option>
+            <option value="Garut">Garut</option>
+            <option value="Bandung">Bandung Kota</option>
+            <option value="Bandung">Bandung, Kiaracondong</option>
+            <option value="Sukabumi">Sukabumi</option>
+        </select><br><br>
+
+        <label for="tujuan">To:</label>
+        <select id="tujuan" name="tujuan">
+            <option value="Jakarta">Jakarta Kota</option>
+            <option value="Jakarta">Jakarta, Tanah Abang</option>
+            <option value="Jakarta">Jakarta, Pasar Senen</option>
+            <option value="Jakarta">Jakarta, Cikini</option>
+            <option value="Bogor">Bogor</option>
+            <option value="Garut">Garut</option>
+            <option value="Bandung">Bandung Kota</option>
+            <option value="Bandung">Bandung, Kiaracondong</option>
+            <option value="Sukabumi">Sukabumi</option>
+        </select><br><br>
+
+        <label for="hargaDewasa">Adult Fare (IDR):</label>
+        <input type="text" id="hargaDewasa" name="hargaDewasa" required><br><br>
+
+        <label for="hargaAnak">Child Fare (IDR):</label>
+        <input type="text" id="hargaAnak" name="hargaAnak" required><br><br>
+
+        <label for="jumlahDewasa">Number of Adult Passengers:</label>
+        <select id="jumlahDewasa" name="jumlahDewasa">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="3">4</option>
+            <option value="3">5</option>
+            <option value="3">6</option>
+            <option value="3">7</option>
+            <option value="3">8</option>
+            <option value="3">9</option>
+            <option value="3">10</option>
+        </select><br><br>
+
+        <label for="jumlahAnak">Number of Child Passengers:</label>
+        <select id="jumlahAnak" name="jumlahAnak">
+            <option value="0">0</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="3">4</option>
+            <option value="3">5</option>
+            <option value="3">6</option>
+            <option value="3">7</option>
+            <option value="3">8</option>
+            <option value="3">9</option>
+            <option value="3">10</option>
+        </select><br><br>
+
+        <label for="member">Member:</label>
+        <input type="checkbox" id="member" name="member"><br><br>
+
+        <label for="diskonKode">Discount Code (If you're a student, enter 'mahasiswa'):</label>
+        <input type="text" id="diskonKode" name="diskonKode"><br><br>
+
+        <label for="hargaTotal">Total Ticket Price (IDR):</label>
+        <input type="text" id="hargaTotal" name="hargaTotal" readonly><br><br>
+
+        <input type="submit" value="Hitung Total Bayar">
+    </form>
+
+    <script src="script.js"></script>
+</body>
+</html>
